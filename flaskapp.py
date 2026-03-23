@@ -30,7 +30,13 @@ def hello(name):
 #  Each exercise asks you to add a new @app.route here
 # ============================================================
 
-
+@app.route('/analyze/<word>')
+def analyze(word):
+    # YOUR CODE HERE
+    char_count = len(word)
+    # Count the characters in `word` and return as a string
+    # Example: /analyze/Drake  →  should display: 5
+    return render_template('analyze.html', word=word, char_count=char_count)
 
 
 # ============================================================
