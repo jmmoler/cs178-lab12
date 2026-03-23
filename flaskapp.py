@@ -20,7 +20,7 @@ def home():
 #  Visit: http://YOUR_IP:8080/hello/YourName/
 #  Anything you put after /hello/ becomes the `name` variable
 # ============================================================
-@app.route('/hello/<name>/')
+@app.route('/hello/Joseph/')
 def hello(name):
     return render_template('hello.html', name=name)
 
@@ -30,7 +30,7 @@ def hello(name):
 #  Each exercise asks you to add a new @app.route here
 # ============================================================
 
-@app.route('/analyze/<word>')
+@app.route('/analyze/Baxter')
 def analyze(word):
     # YOUR CODE HERE
     char_count = len(word)
