@@ -34,15 +34,14 @@ def hello(name):
 def analyze(word):
     num_chars = len(word)
 
-    num_vowels = 0  # your vowel code from Exercise 2
+    num_vowels = 0  
     for char in word.lower():
         if char in 'aeiou':
             num_vowels += 1
 
-    # YOUR CODE HERE
-    # Reverse the word
-    # Hint: Python string slicing with [::-1] reverses a string
-    reversed_word = ''  # replace this with your reverse logic
+    
+    reversed_word = word[::-1]  # replace this with your reverse logic
+    
 
     return render_template('analyze.html',
                            word=word,
